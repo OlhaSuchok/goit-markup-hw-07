@@ -1,16 +1,4 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  --main-color: #212121;
-  --secondary-color: #757575;
-  --third-color: #F5F4FA;
-  --fourth-color: #F5F5F5;
-  --accent-color: #ffffff;
-  --adress-color: rgba(255, 255, 255, 0.6);
-  --nav-color: #2196f3;
-  --icons-color: #AFB1B8;
-}
-
+@import url("https://fonts.googleapis.com/css2? family= Raleway:wght@700 & family= Roboto:wght@400;500;700;900 & display=swap");
 body {
   margin: 0;
   color: var(--main-color);
@@ -80,6 +68,19 @@ button {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --third-color: #F5F4FA;
+  --fourth-color: #F5F5F5;
+  --accent-color: #ffffff;
+  --adress-color: rgba(255, 255, 255, 0.6);
+  --nav-color: #2196f3;
+  --icons-color: #AFB1B8;
 }
 
 .logotype,
@@ -752,12 +753,7 @@ textarea {
   margin-right: 30px;
 }
 
-.Logo1,
-.Logo2,
-.Logo3,
-.Logo4,
-.Logo5,
-.Logo6 {
+.company-logo {
   padding: 0;
   width: 106px;
   height: 60px;
