@@ -313,6 +313,7 @@ button {
   --accent-color: #ffffff;
   --adress-color: rgba(255, 255, 255, 0.6);
   --nav-color: #2196f3;
+  --logo-color: #000000;
   --icons-color: #AFB1B8;
 }
 
@@ -462,7 +463,7 @@ body {
 }
 
 .logo {
-  color: #000000;
+  color: var(--logo-color);
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -478,7 +479,7 @@ body {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #000000;
+  color: var(--logo-color);
 }
 
 .logo__footer {
