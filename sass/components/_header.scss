@@ -1,0 +1,149 @@
+.header {
+  border-bottom: 1px solid #ECECEC;
+  background-color: var(--accent-color)
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.studio,
+.portfolio,
+.contacts,
+.link-mail,
+.link-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio,
+.portfolio,
+.contacts {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.studio,
+.portfolio {
+  margin-right: 50px;
+}
+
+.contacts {
+  margin-right: 318px;
+}
+
+.studio:hover,
+.studio:focus,
+.portfolio:hover,
+.portfolio:focus,
+.contacts:hover,
+.contacts:focus {
+  color: var(--nav-color);
+}
+
+.link.studio.current,
+.link.portfolio.current {
+  color: var(--nav-color);
+}
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.envelope,
+.smartphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.envelope {
+  margin-right: 30px;
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  padding: 0;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  padding: 0;
+  fill: currentColor;
+}
+
+.link-mail,
+.link-tel {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.envelope a:hover,
+.smartphone a:hover, 
+.envelope a:focus,
+.smartphone a:focus {
+  color: var(--nav-color);
+  fill: #2196f3;
+}
+
+.studio::after,
+.portfolio::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -1px;
+  border-radius: 4px;
+  background-color: #2196f3;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio:hover .studio::after,
+.studio:focus .studio::after,
+.portfolio:hover .portfolio::after,
+.portfolio:focus .portfolio::after {
+  width: 100%;
+}
+
+.current::after {
+  width: 100%;
+}

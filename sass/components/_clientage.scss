@@ -1,0 +1,42 @@
+.section-clientage {
+  background-color: var(--accent-color);
+}
+
+.clientage-list {
+  display: flex;
+}
+
+.clientage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--icons-color);
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clientage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-logo {
+  padding: 0;
+  width: 106px;
+  height: 60px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clientage:hover,
+.clientage:focus {
+  fill: var(--nav-color);
+  border: 1px solid var(--nav-color);
+} 
