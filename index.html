@@ -42,72 +42,67 @@
 <!--Main-->
 <main>
 <!--Block hero-->
-<section class="section-hero">
+<section class="hero">
 <div class="container">
-    <div class="hero-wrapper">
-<h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-<button class="button-hero button" type="button" data-modal-open>Замовити послугу</button>
+    <div class="hero__box">
+<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+<button class="button button__hero" type="button" data-modal-open>Замовити послугу</button>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="close-modal" data-modal-close>
-        <svg class="icon-close" width="11" height="11">
+        <button class="modal__knob" data-modal-close>
+        <svg class="modal__symbol" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
         </button>
 
-<form class="form-modal">
+<form class="form">
     
-        <p class="title-modal">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
 
-        <label class="lable" for="input-name">Ім'я</label>
-
-    <div class="field">
-        <input class="field-input" type="text" name="name" required id="input-name">
-        <svg class="field-icon" width="12" height="12">
+        <label class="form__lable" for="input-name">Ім'я</label>
+    <div class="form__field">
+        <input class="form__input" type="text" name="name" required id="input-name">
+        <svg class="form__icon" width="12" height="12">
             <use href="./images/icons.svg#icon-input-name"></use>
         </svg>
     </div>
 
-        <label class="lable" for="input-phone">Телефон</label>
-
-    <div class="field">
-        <input class="field-input" type="text" name="phone" required id="input-phone">
-        <svg class="field-icon" width="13" height="13">
+        <label class="form__lable" for="input-phone">Телефон</label>
+    <div class="form__field">
+        <input class="form__input" type="text" name="phone" required id="input-phone">
+        <svg class="form__icon" width="13" height="13">
             <use href="./images/icons.svg#icon-input-phone"></use>
         </svg>
     </div>
 
-        <label class="lable" for="input-mail">Пошта</label>
-
-    <div class="field">
-        <input class="field-input" type="text" name="mail" required id="input-mail">
-        <svg class="field-icon" width="15" height="12">
+        <label class="form__lable" for="input-mail">Пошта</label>
+    <div class="form__field">
+        <input class="form__input" type="text" name="mail" required id="input-mail">
+        <svg class="form__icon" width="15" height="12">
             <use href="./images/icons.svg#icon-input-mail"></use>
         </svg>
     </div>
 
-    <label class="lable" for="message">Коментар</label>
-    
-    <textarea class="message input" name="comment" id="message" placeholder="Введіть текст"></textarea>
+    <label class="form__lable" for="message">Коментар</label>
+    <textarea class="form__textarea" name="comment" id="message" placeholder="Введіть текст"></textarea>
 
         <label class="privacy">
-            <input class="privacy-input hide" type="checkbox" name="privacy">
+            <input class="privacy__input hide" type="checkbox" name="privacy">
 
-            <span class="privacy-wrapp">
-              <svg class="privacy-icon" width="11" height="8">
+            <span class="privacy__mark">
+              <svg class="privacy__icon" width="11" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
 
-            <span class="privacy-text">
+            <span class="privacy__text">
               Погоджуюся з розсилкою та приймаю
-              <a class="privacy-link" href="#">Умови договору</a>
+              <a class="privacy__link" href="#">Умови договору</a>
             </span>
         </label>    
 
-    <button class="button-modal button" type="submit">Відправити</button>
-
+    <button class="button form__button" type="submit">Відправити</button>
 </form>
 
     </div>
@@ -118,49 +113,49 @@
 </section>
 
 <!--Сriterion-->
-<section class="section-criterion section">
+<section class="criteria section">
     <div class="container">
-<h2 class="subject hide">Критерії ведення ефективного бізнесу</h2>
+<h2 class="criteria__title hide">Критерії ведення ефективного бізнесу</h2>
 
-<ul class="list flex criterion">
-<li class="criterion-list">
-    <div class="criterion-icons">
-        <svg class="icon-antenna" width="70" height="70">
+<ul class="criteria__list">
+<li class="criteria__item">
+    <div class="criteria__image">
+        <svg class="criteria__icons" width="70" height="70">
             <use href="./images/icons.svg#icon-antenna"></use>
         </svg>
     </div>
- <h3 class="heading">УВАГА ДО ДЕТАЛЕЙ</h3>
- <p class="heading-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+ <h3 class="criteria__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+ <p class="criteria__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 </li>
 
-<li>
-    <div class="criterion-icons">
-        <svg class="icon-clock" width="70" height="70">
+<li class="criteria__item">
+    <div class="criteria__image">
+        <svg class="criteria__icons" width="70" height="70">
             <use href="./images/icons.svg#icon-clock"></use>
         </svg>
     </div>
- <h3 class="heading">ПУНКТУАЛЬНІСТЬ</h3>
- <p class="heading-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+ <h3 class="criteria__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+ <p class="criteria__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 </li>
 
-<li>
-    <div class="criterion-icons">
-        <svg class="icon-diagram" width="70" height="70">
+<li class="criteria__item">
+    <div class="criteria__image">
+        <svg class="criteria__icons" width="70" height="70">
             <use href="./images/icons.svg#icon-diagram"></use>
         </svg>
     </div>
- <h3 class="heading">ПЛАНУВАННЯ</h3>
- <p class="heading-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+ <h3 class="criteria__subtitle">ПЛАНУВАННЯ</h3>
+ <p class="criteria__text">Так само консультація з широким активом значною мірою зумовлює.</p>
 </li>
 
-<li>
-    <div class="criterion-icons">
-        <svg class="icon-astronaut" width="70" height="70">
+<li class="criteria__item">
+    <div class="criteria__image">
+        <svg class="criteria__icons" width="70" height="70">
             <use href="./images/icons.svg#icon-astronaut"></use>
         </svg>
     </div>
- <h3 class="heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
- <p class="heading-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+ <h3 class="criteria__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+ <p class="criteria__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 </li>
 </ul>
     </div>

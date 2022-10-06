@@ -1,13 +1,13 @@
-.section-criterion .container,
-.flex.criterion {
+.criteria {
   display: flex;
-}
-
-.section-criterion {
   background-color: var(--accent-color);
 }
 
-.subject {
+.criteria .container {
+  display: flex;
+}
+
+.criteria__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -15,27 +15,15 @@
   letter-spacing: 0.03em;
 }
 
-
-.heading {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.criteria__list {
+  display: flex;
 }
 
-.heading-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.criteria__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.heading-text {
-  color: var(--secondary-color);
-}
-
-.criterion-icons {
+.criteria__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +33,18 @@
   background-color: var(--third-color);
 }
 
-.criterion-list:not(:last-child) {
-  margin-right: 30px;
+.criteria__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.criteria__text {
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
