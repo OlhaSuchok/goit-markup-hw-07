@@ -1,28 +1,19 @@
 .header {
   border-bottom: 1px solid #ECECEC;
-  background-color: var(--accent-color)
-}
+  background-color: var(--accent-color);
 
-.header__box {
+  &__box {
   display: flex;
   align-items: center;
   justify-content: center;
+  }
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-}
 
-.site-nav__link:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav__link:last-child {
-  margin-right: 318px;
-}
-
-.site-nav__link {
+  &__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -35,18 +26,26 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--nav-color);
-}
+  &__link:not(:last-child) {
+  margin-right: 50px; 
+  }
 
-.site-nav_link-current {
-  color: var(--nav-color);
-}
+  &__link:last-child {
+  margin-right: 318px;
+  }
 
-.site-nav__link::after {
+  &__link:hover,
+  &__link:focus {
+    color: var(--nav-color);
+  }
+
+  &__link--current {
+    color: var(--nav-color);
+  }
+
+  &__link::after {
   position: absolute;
   content: "";
   width: 0;
@@ -56,27 +55,27 @@
   margin-bottom: -1px;
   border-radius: 4px;
   background-color: #2196f3;
-
+  
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  } 
 
-.site-nav__link:hover .site-nav__link::after,
-.site-nav__link:focus .site-nav__link::after {
+  &__link--current::after {
+  width: 100%;
+  }
+
+  &__link:hover &__link::after,
+  &__link:focus &__link::after {
   width: 100%;
 }
-
-.site-nav__link--current::after {
-  width: 100%;
 }
 
 .auth-nav {
   display: flex;
   align-items: center;
-}
 
-.auth-nav__item {
+  &__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,24 +93,26 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav__item:not(:last-child) {
+  &__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.auth-nav__item:hover,
-.auth-nav__item:focus {
+  &__item:hover,
+  &__item:focus {
   color: var(--nav-color);
   fill: var(--nav-color);
 }
 
-.auth-nav__link {
+  &__link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.auth-nav__icon {
+  &__icon {
   margin-right: 10px;
   padding: 0;
   fill: currentColor;
+}
+
 }
