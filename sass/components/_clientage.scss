@@ -1,12 +1,25 @@
-.section-clientage {
+.clientage {
   background-color: var(--accent-color);
+}
+
+.clientage__title {
+  margin-bottom: 50px;  
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .clientage-list {
   display: flex;
 }
 
-.clientage {
+.clientage-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clientage-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +34,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clientage-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.company-logo {
+.clientage-list__logo {
   padding: 0;
   width: 106px;
   height: 60px;
@@ -35,8 +44,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clientage:hover,
-.clientage:focus {
+.clientage-list__link:hover,
+.clientage-list__link:focus {
   fill: var(--nav-color);
   border: 1px solid var(--nav-color);
 } 
