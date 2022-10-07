@@ -1,10 +1,10 @@
 .criteria {
   display: flex;
   background-color: var(--accent-color);
-}
 
-.criteria .container {
+  & .container {
   display: flex;
+  }
 }
 
 .criteria__title {

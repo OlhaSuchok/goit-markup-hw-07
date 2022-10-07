@@ -32,6 +32,12 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  fill: var(--nav-color);
+  border: 1px solid var(--nav-color);
+  } 
 }
 
 .clientage-list__logo {
@@ -43,9 +49,3 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clientage-list__link:hover,
-.clientage-list__link:focus {
-  fill: var(--nav-color);
-  border: 1px solid var(--nav-color);
-} 

@@ -26,13 +26,13 @@
 
 .team__link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--accent-color);
-}
 
-.team__link:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 30px;
+  }
 }
 
 .team__image {
@@ -75,10 +75,10 @@
   transition-property: fill, background-color;
   transition-duration: 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icons-list__link:hover,
-.icons-list__link:focus {
+  &:hover,
+  &:focus {
   fill: var(--accent-color);
   background-color: var(--nav-color);
+  }
 }

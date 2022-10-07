@@ -18,10 +18,10 @@
 
 .functions__item {
   position: relative;
-}
 
-.functions__item:not(:last-child) {
+  &.functions__item:not(:last-child) {
   margin-right: 30px;
+  }
 }
 
 .functions__image {
