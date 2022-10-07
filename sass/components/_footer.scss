@@ -61,6 +61,10 @@
   letter-spacing: 0.03em;
 }
 
+.icons-list--pd {
+  padding: 0;
+}
+
 .icons-list__link--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--accent-color);
