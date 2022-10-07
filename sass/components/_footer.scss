@@ -44,67 +44,56 @@
   color: var(--nav-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-.footer-networks .text,
-.footer-form .text {
-margin-bottom: 20px; 
-font-family: var(--main-font);
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-
-.footer-networks {
+.footer-social-networks {
   margin-right: 93px;
 } 
 
-.footer-networks .networks-list {
-  padding: 0;
+.footer-social-networks__text {
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
-.icon-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  padding: 0;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
+.icons-list__link--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--accent-color);
-
-  transition-property: fill, background-color;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer:hover,
-.icon-footer:focus {
-  fill: var(--accent-color);
+.icons-list__link--color:hover,
+.icons-list__link--color:focus {
   background-color: var(--nav-color);
 }
 
-.footer-form {
+.footer-subscription {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.footer-input {
+.footer-subscription__text {
+  display: block;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.footer-subscription__input {
   display: block;
   align-self: flex-start;
   text-align: left;
@@ -130,7 +119,7 @@ color: #FFFFFF;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input::placeholder {
+.footer-subscription__input::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
@@ -139,27 +128,12 @@ color: #FFFFFF;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input:hover,
-.footer-input:focus {
+.footer-subscription__input:hover,
+.footer-subscription__input:focus {
   border-color: var(--nav-color);
 }
 
-.form .text {
-  display: block;
-  padding: 0;
-  text-align: left;
-  margin-bottom: 20px; 
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.subscription {
+.footer-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,13 +145,11 @@ color: #FFFFFF;
   height: 50px;
 }
 
-.button-footer {
+.button-mr {
   margin-right: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--accent-color);
-  background-color: var(--nav-color);
 }
+
+
+
+
+
