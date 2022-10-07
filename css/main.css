@@ -349,6 +349,7 @@ body {
   border-bottom: 1px solid #ECECEC;
   background-color: var(--accent-color);
 }
+
 .header__box {
   display: flex;
   align-items: center;
@@ -481,10 +482,12 @@ body {
   background-size: cover;
   background-color: #2f303a;
 }
+
 .hero__box {
   margin: 0 auto;
   max-width: 696px;
 }
+
 .hero__title {
   margin-bottom: 30px;
   text-align: center;
