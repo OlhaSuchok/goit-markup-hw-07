@@ -46,19 +46,19 @@
   }
 
   &__link::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  margin-bottom: -1px;
-  border-radius: 4px;
-  background-color: #2196f3;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -1px;
+    border-radius: 4px;
+    background-color: #2196f3;
   
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   } 
 
   &__link--current::after {
@@ -68,7 +68,7 @@
   &__link:hover &__link::after,
   &__link:focus &__link::after {
   width: 100%;
-}
+  }
 }
 
 .auth-nav {
@@ -91,28 +91,27 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
   &__item:not(:last-child) {
   margin-right: 30px;
-}
+  }
 
-  &__item:hover,
-  &__item:focus {
+  &__link:hover,
+  &__link:focus {
   color: var(--nav-color);
   fill: var(--nav-color);
-}
+  }
 
   &__link {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  } 
 
   &__icon {
   margin-right: 10px;
   padding: 0;
   fill: currentColor;
-}
-
+  }
 }

@@ -12,14 +12,13 @@
   background-position: center;
   background-size: cover;
   background-color: #2f303a;
-}
 
-.hero__box {
+  &__box {
   margin: 0 auto;
   max-width: 696px;
-}
+  }
 
-.hero__title {
+  &__title {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
@@ -28,6 +27,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--accent-color);
+  }
 }
 
 .button__hero {
@@ -37,10 +37,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button__hero:hover,
-.button__hero:focus {
+  &:hover,
+  &:focus {
   color: var(--main-color);
   background-color: var(--third-color);
+  }
 }
